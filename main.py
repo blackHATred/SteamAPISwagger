@@ -65,8 +65,8 @@ def main():
             'description': 'Оригинальный референс на API. Там перечислены не все методы!'
         }
     }
-    with open('dist/swagger.json', 'w') as f:
-        json.dump(swagger, f, ensure_ascii=False)
+    with open('dist/swagger.json', 'w', encoding='utf8') as f:
+        json.dump(swagger, f)
 
 
 if __name__ == '__main__':
